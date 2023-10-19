@@ -87,7 +87,7 @@ It should return a device beginning with `/dev/serial/by-id/usb-Klipper_stm32f04
 serial: /dev/serial/by-id/usb-Klipper_stm32f042x6_40004A000551303439343636-if00
 
 [adxl345]
-cs_pin: usb:PA4
+cs_pin: NIS:PA4
 spi_software_sclk_pin: NIS:PA5
 spi_software_mosi_pin: NIS:PA7
 spi_software_miso_pin: NIS:PA6
