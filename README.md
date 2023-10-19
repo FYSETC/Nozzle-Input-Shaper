@@ -93,8 +93,7 @@ spi_software_mosi_pin: NIS:PA7
 spi_software_miso_pin: NIS:PA6
 
 [resonance_tester]
-accel_chip: adxl345 usbadxl
-# accel_chip: adxl345 
+accel_chip: adxl345
 probe_points:
     100,100,20 # an example - set this to the centre of your BED.
 ```
