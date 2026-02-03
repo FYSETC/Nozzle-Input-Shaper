@@ -17,34 +17,24 @@ cd ~/klipper
 ```
 3. Run make clean 
 ```bash
-make clean KCONFIG_CONFIG=config.nis
+make clean
 ```
 4. Open menuconfig 
 ```bash
-make menuconfig KCONFIG_CONFIG=config.nis
+make menuconfig
 ```
 5. Set the following settings
-   - [ * ] Enable extra low-level configuration options
-   - Micro-controller Architecture (STMicroelectronics STM32)
-   - Processor model (STM32F042)
-   - Bootloader offset (No bootloader)
-   - Clock Reference (Internal Clock)
-   - Communication interface (USB (on PA9/PA10))
-   - Optional features (to reduce code size) --->
-       - [ * ] Support GPIO "bit-banging" devices
-       - [_] Support LCD devices
-       - [ * ] Support external sensor devices
-       - [_] Support lis2dw 3-axis accelerometer
-       - [_] Support software based I2C "bit-banging"
-       - [ * ] Support software based SPI "bit-banging"
     
-![image](https://github.com/FYSETC/Nozzle-Input-Shaper/assets/5789676/cd5af36d-175f-44a9-9904-70dc69c3b26a)
-![image](https://github.com/FYSETC/Nozzle-Input-Shaper/assets/5789676/5b5e816c-33a7-47c1-8bda-40ca24a3e27d)
+<img width="657" height="415" alt="NIS_Klipper" src="https://github.com/user-attachments/assets/a08cae0e-008c-4e8b-9720-58146a5b85b7" />
+
+
+<img width="747" height="638" alt="NIS_Klipper2" src="https://github.com/user-attachments/assets/3cdbac49-b6f6-4492-bd5e-0c0e31c5406d" />
+
 
 6. Quit (press q) and save the configuration
 7. Run Make to compile the firmware
 ```bash
-make KCONFIG_CONFIG=config.nis -j4
+make
 ```
 #### Flash Klipper over USB
 1. Ensure that you are still connected via SSH, if not, reconnect to your Klipper host via SSH. 
